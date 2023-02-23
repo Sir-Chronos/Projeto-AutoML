@@ -1,0 +1,187 @@
+/*Adição da fonte Montserrat ao programa */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
+
+/* Zerando o padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: var(--peso);
+}
+:root {
+  --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #1a1919 93.41%);
+  --texto: white;
+  --botao: linear-gradient(
+    257.91deg,
+    #c366ff 17.54%,
+    #d37fc8 54.55%,
+    #e95582 72.93%
+  );
+  --botaoTxt: white;
+  --input-fundo: white;
+  --peso: 300;
+}
+
+.white-mode:root {
+  --fundo: linear-gradient(232.73deg, #fbfbfb 8.79%, #bebebe 84.88%);
+  --texto: rgb(0, 0, 0);
+  --botao: linear-gradient(
+    260.02deg,
+    #a6c3e4 -4.36%,
+    #3f87dd -4.35%,
+    #7db1ef 45.09%,
+    #86bcfc 59.75%
+  );
+  --botaoTxt: rgb(3, 3, 3);
+  --input-fundo: white;
+  --peso: 500;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--fundo);
+  color: var(--texto);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  width: 800px;
+  min-height: 500px;
+  height: auto;
+  box-shadow: 0px 0px 14px -3px black;
+  border-radius: 15px;
+}
+input {
+  text-align: center;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 200px;
+}
+.titulo h1 {
+  width: 600px;
+  text-align: left;
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.titulo p b:nth-child(1) {
+  font-size: 20px;
+}
+.titulo b {
+  font-weight: bold;
+}
+.titulo p {
+  word-break: normal;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 25px;
+}
+.inputOutput {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  background: var(--input-fundo);
+  border-radius: 12px;
+  width: 100px;
+  height: 40px;
+  border-style: none;
+}
+.Input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  gap: 30px;
+}
+.Input p{
+  padding-top: 10px;
+  font-weight: 700;
+}
+.output{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#result {
+  padding: 10px;
+  background-color: var(--input-fundo);
+  color: black;
+  border-radius: 12px;
+  width: auto;
+  min-width: 100px;
+  max-width: 500px;
+  height: auto;
+  min-height: 40px;
+  word-break: break-all;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#btnCalcular {
+  width: 140px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  align-items: center;
+  background: var(--botao);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: 5%;
+  transition: 0.2s;
+  color: white;
+  font-weight: 500;
+  align-items: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+#btnCalcular:hover {
+  transform: scale(110%);
+}
+
+#btnSomar,
+#btnSub,
+#btnMult,
+#btnDiv {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  align-items: center;
+  background: var(--botao);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  border-style: none;
+  margin-top: 5%;
+  transition: 0.2s;
+  color: white;
+  font-weight: 500;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+#btnSomar:hover,
+#btnSub:hover,
+#btnMult:hover,
+#btnDiv:hover {
+  transform: scale(110%);
+}
