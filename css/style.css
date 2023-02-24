@@ -28,3 +28,13 @@ footer{
     width: 100%;
     background-color: black;
 }
+
+p{
+    color: white;
+    padding:15px;
+
+}
+
+textarea{
+    border-radius: 30px;
+}
