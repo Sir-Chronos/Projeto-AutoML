@@ -4,7 +4,8 @@ envio.addEventListener("click", janela)
 function janela(){
     var head = document.getElementById("head")
 
-    head.innerHTML += `    <link rel="stylesheet" href="css/main.css">`
+    head.innerHTML += `    <link rel="stylesheet" href="css/main.css">`'
+
     var corpo = document.getElementById("corpo")
 
     corpo.innerHTML =`    <!-- Instruções basicas: Copie e cole os elementos do seu codigo para este em seus respectivos locais.
