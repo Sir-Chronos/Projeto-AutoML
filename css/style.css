@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    box-shadow: -5px 4px 15px rgb(11, 1, 11);
 }
 
 header{
@@ -32,6 +33,8 @@ footer{
 p{
     color: white;
     padding:15px;
+    display: flex;
+    justify-content: center;
 
 }
 
