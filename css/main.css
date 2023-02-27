@@ -9,15 +9,14 @@
   font-family: "Montserrat", sans-serif;
   font-weight: var(--peso);
 }
+
 :root {
   --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #1a1919 93.41%);
   --texto: white;
-  --botao: linear-gradient(
-    257.91deg,
-    #c366ff 17.54%,
-    #d37fc8 54.55%,
-    #e95582 72.93%
-  );
+  --botao: linear-gradient(257.91deg,
+      #c366ff 17.54%,
+      #d37fc8 54.55%,
+      #e95582 72.93%);
   --botaoTxt: white;
   --input-fundo: white;
   --peso: 300;
@@ -26,37 +25,38 @@
 .white-mode:root {
   --fundo: linear-gradient(232.73deg, #fbfbfb 8.79%, #bebebe 84.88%);
   --texto: rgb(0, 0, 0);
-  --botao: linear-gradient(
-    260.02deg,
-    #a6c3e4 -4.36%,
-    #3f87dd -4.35%,
-    #7db1ef 45.09%,
-    #86bcfc 59.75%
-  );
+  --botao: linear-gradient(260.02deg,
+      #a6c3e4 -4.36%,
+      #3f87dd -4.35%,
+      #7db1ef 45.09%,
+      #86bcfc 59.75%);
   --botaoTxt: rgb(3, 3, 3);
   --input-fundo: white;
   --peso: 500;
 }
 
 body {
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--fundo);
   color: var(--texto);
 }
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
+  padding: 9px;
   width: 800px;
-  min-height: 500px;
+  min-height: 660px;
   height: 100%;
   box-shadow: 0px 0px 14px -3px black;
   border-radius: 15px;
 }
+
 input {
   text-align: center;
   font-size: 1.3rem;
@@ -66,6 +66,7 @@ input {
   width: 700px;
   height: 200px;
 }
+
 .tiulo h1 {
   width: 600px;
   text-align: left;
@@ -73,22 +74,27 @@ input {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
 .titulo p b:nth-child(1) {
   font-size: 20px;
 }
+
 .titulo b {
   font-weight: bold;
 }
+
 .titulo p {
   word-break: normal;
   text-align: justify;
   font-size: 18px;
   line-height: 25px;
 }
+
 .inputOutput {
   display: flex;
   flex-direction: column;
 }
+
 input {
   background: var(--input-fundo);
   border-radius: 12px;
@@ -96,6 +102,7 @@ input {
   height: 40px;
   border-style: none;
 }
+
 .Input {
   display: flex;
   justify-content: center;
@@ -103,16 +110,19 @@ input {
   margin-top: 2%;
   gap: 30px;
 }
-.Input p{
+
+.Input p {
   padding-top: 10px;
   font-weight: 700;
 }
-.output{
+
+.output {
   margin-top: 5%;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
+
 #result {
   padding: 10px;
   background-color: var(--input-fundo);
@@ -129,11 +139,13 @@ input {
   justify-content: center;
   align-items: center;
 }
+
 .buttons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 #btnCalcular {
   width: 140px;
   height: 60px;
@@ -152,6 +164,7 @@ input {
   font-size: 1.3rem;
   cursor: pointer;
 }
+
 #btnCalcular:hover {
   transform: scale(110%);
 }
@@ -185,4 +198,16 @@ input {
 #btnMult:hover,
 #btnDiv:hover {
   transform: scale(110%);
+}
+
+
+#reset {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
 }
