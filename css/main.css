@@ -39,20 +39,21 @@
 }
 
 body {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--fundo);
   color: var(--texto);
 }
-main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 50px;
   width: 800px;
   min-height: 500px;
-  height: auto;
+  height: 100%;
   box-shadow: 0px 0px 14px -3px black;
   border-radius: 15px;
 }
@@ -65,7 +66,7 @@ input {
   width: 700px;
   height: 200px;
 }
-.titulo h1 {
+.tiulo h1 {
   width: 600px;
   text-align: left;
   font-size: 28px;
