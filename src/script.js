@@ -53,7 +53,10 @@ function inserir () {
         //Retorna o botão run
 
         let header = document.getElementById("header")
-        header.innerHTML = `<input id="run" type="button" value="Run">`
+        header.innerHTML = `<input id="run" type="button" value="CARREGAR">`
+
+        var btn = document.getElementById("run")
+        btn.addEventListener("click", inserir)
 
 }
 }
